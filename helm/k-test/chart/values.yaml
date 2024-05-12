@@ -1,0 +1,5 @@
+appName: k-test
+imageName: localhost:5000/k-test:1.1.0
+replicas: 4
+sourcePort: 80
+host: localhost

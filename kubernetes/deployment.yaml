@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: k-test
+  name: k-test
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: k-test
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: k-test
+    spec:
+      containers:
+      - image: localhost:5000/k-test
+        name: k-test
